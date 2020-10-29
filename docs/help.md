@@ -4,7 +4,8 @@
 
 ```bash
 sudo add-apt-repository ppa:git-core/ppa
-sudo apt update && upgrade
+sudo apt update 
+sudo apt upgrade
 
 git config --global init.defaultBranch main
 
