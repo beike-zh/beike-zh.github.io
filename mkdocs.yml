@@ -28,6 +28,15 @@ markdown_extensions:
   - def_list
   - footnotes
   - meta
+# formatting
+  - pymdownx.critic
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+
 # toc
   - toc:
       permalink: true  
