@@ -22,8 +22,10 @@ theme:
 
 
 markdown_extensions:
+# toc
   - toc:
       permalink: true  
+# highlight line-number
   - pymdownx.highlight:
       linenums: true
       linenums_style: pymdownx.inline  
@@ -35,3 +37,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
