@@ -1,1 +1,20 @@
-site_name: My Docs
+site_name: Beike's blog.
+repo_name: beike-zh/beike-zh.github.io
+repo_url: https://github.com/beike-zh/beike-zh.github.io
+edit_uri: ''
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
