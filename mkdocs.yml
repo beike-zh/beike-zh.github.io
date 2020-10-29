@@ -12,9 +12,26 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
-    - scheme: slate
-      primary: indigo
-      accent: blue
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
+# Because i didn't use the insiders  version
+#    - scheme: slate
+#      primary: indigo
+#      accent: blue
+#      toggle:
+#        icon: material/toggle-switch-off-outline
+#        name: Switch to dark mode
+
+
+markdown_extensions:
+  - toc:
+      permalink: true  
+  - pymdownx.highlight:
+      linenums: true
+      linenums_style: pymdownx.inline  
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
