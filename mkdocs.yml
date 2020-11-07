@@ -9,7 +9,7 @@ repo_url: https://github.com/beike-zh/beike-zh.github.io
 edit_uri: ''
 
 # Copyright
-copyright: Copyright &copy; 2016 - 2020 beike-zh
+copyright: beike-zh
 
 theme:
   name: material
