@@ -1,10 +1,9 @@
-# 开发环境配置
+## 哈啊
 
 > `WSL2-Ubuntu` 
 
-## 基本配置
+### basic
 ```bash
-sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 sudo apt update
 sudo apt upgrade
 sudo apt install zsh python3-pip lua5.3 build-essential curl libffi-dev libffi7 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5
@@ -13,14 +12,14 @@ zsh
 # 选2 
 ```
 
-## PPA相关
+### ppa
 ```bash
-sudo add-apt-repository ppa:kelleyk/emacs
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo add-apt-repository ppa:git-core/ppa
 sudo apt update
-sudo apt install emacs27-nox
 ```
 
-## Shell
+### `zsh`
 ```bash
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 # 安装 zplug
@@ -29,19 +28,24 @@ zplug install
 
 添加 `source ~/dotfiles/init/zsh/init.zsh` 到 `.zshrc`
 
-## Neovim
+### git
+```bash
+git config --global init.defaultBranch main
+```
+
+### neovim
 
 在 `~/config/nvim/init.vim` 中添加 `source ~/dotfiles/init/nvim/init.vim` 
 
-## Haskell
+### haskell
 
 > 使用 `ghcup`
+
+我用不来 `stack`
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 
-ghcup install 8.10.2
-ghcup set ghc 8.10.2
+ghcup install 9.0.x
+ghcup set ghc 9.0.x
 ```
-
-> Cabal.config

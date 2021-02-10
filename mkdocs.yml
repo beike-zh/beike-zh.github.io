@@ -15,12 +15,11 @@ theme:
   name: material
   palette:
     - scheme: default
-      primary: deep orange
+      primary: black 
       accent: red
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
-# Because i didn't use the insiders  version
+#      toggle:
+#       icon: material/toggle-switch
+#       name: Switch to light mode
 #    - scheme: slate
 #      primary: indigo
 #      accent: blue
