@@ -49,3 +49,14 @@ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ghcup install 9.0.x
 ghcup set ghc 9.0.x
 ```
+
+### `idris2` 
+```bash
+sudo apt install chezscheme chezscheme9.5-doc
+mk app && cd app
+wget https://github.com/idris-lang/Idris2/archive/xxx.tar.gz
+tar -xf xxx.tar.gz
+cd xxx
+make bootstrap SCHEME=scheme
+make install 
+```
