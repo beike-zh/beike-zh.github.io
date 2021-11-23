@@ -17,15 +17,15 @@ theme:
     - scheme: default
       primary: black 
       accent: red
-#      toggle:
-#       icon: material/toggle-switch
-#       name: Switch to light mode
-#    - scheme: slate
-#      primary: indigo
-#      accent: blue
-#      toggle:
-#        icon: material/toggle-switch-off-outline
-#        name: Switch to dark mode
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
 
 
 markdown_extensions:
@@ -53,6 +53,10 @@ markdown_extensions:
       linenums_style: pymdownx.inline  
   - pymdownx.inlinehilite
   - pymdownx.superfences
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.snippets
   - pymdownx.keys
   - pymdownx.tabbed
@@ -74,7 +78,7 @@ plugins:
         - en
 
 
-# LaTeX 资源
+# LaTeX 
 extra_javascript:
   - javascripts/config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
