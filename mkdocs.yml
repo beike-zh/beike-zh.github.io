@@ -53,10 +53,6 @@ markdown_extensions:
       linenums_style: pymdownx.inline  
   - pymdownx.inlinehilite
   - pymdownx.superfences
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.snippets
   - pymdownx.keys
   - pymdownx.tabbed
